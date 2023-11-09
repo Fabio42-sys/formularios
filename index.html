@@ -9,6 +9,85 @@
 <body>
     <form action="">
 
+        <!-- fieldset define um campo na tela do usuario criando uma box -->
+        <fieldset>
+            <legend>Turno:</legend>
+
+            <div class="controle-form">
+                <input type="radio" id="manha" name="turno">
+                <label for="manha">Manhã</label>
+            </div>
+
+            <div class="controle-form">
+                <input type="radio" id="tarde" name="turno">
+                <label for="tarde">Tarde</label>
+            </div>
+
+            <div class="controle-form">
+                <input type="radio" id="noite" name="turno">
+                <label for="noite">Noite</label>
+            </div> 
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Localidade:</legend>
+                <div class="controle-form">
+                    <label for="pais">País</label>
+                    <select id="pais">
+                        <option value="AF">Afeganistão</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BR" selected>Brasil</option>
+                        <option value="BU">Butão</option>
+                        <option value="CA">Canadá</option>
+                        <option value="US">Estados Unidos</option>
+                        <option value="RU" disabled>Rússia</option>
+                    </select>
+                </div>
+        
+                <div class="controle-form">
+                    <label for="uf">UF:</label>
+                    <input list="listaUF" id="uf">
+                </div>
+        </fieldset>
+
+        <div class="controle-form">
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" min="0" max="100" step="25">
+        </div>
+
+        <datalist id="listaUF">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </datalist>
+
+   
+
         <div class="controle-form">
             <label for="codigo">Código:</label>
             <input type="number" id="codigo" value="123456" readonly>
@@ -53,7 +132,7 @@
 
         <div class="controle-form">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" value="Emmet" autofocus required>
+            <input type="text" id="nome" value="Emmet" required>
         </div>
 
         <div class="controle-form">
